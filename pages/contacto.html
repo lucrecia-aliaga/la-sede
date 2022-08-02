@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicon-->
+    <link rel="shortcut icon" href="../assets/LaSede_Logo.svg" type="image/x-icon">
+    <!--Hoja de estilos de manera externa-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto</title>
+</head>
+<body class="grid-contacto">
+    <header class="grid-item-c g-header">
+        <!--Mi barra de navegacion-->
+        <div>
+            <a href="../index.html">
+                <img src="../assets/LaSede_Logo.svg" alt="logo-la_sede" width="100px">
+            </a>
+        </div>
+        <!--hipervínculos a mis distintas páginas web-->
+        <nav>
+            <ul class="nav__list">
+                <li class="font-nav"><a href="../index.html">Home</a></li>
+                <li class="font-nav"><a href="./futbol.html">Fútbol</a></li>
+                <li class="font-nav"><a href="./padel.html">Padel</a></li>
+                <li class="font-nav"><a href="./galeria.html">Galería</a></li>
+                <li class="font-nav"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="grid-item-c g-content grid-content">
+        <div class="box g-box">
+            <!--Formulario de contacto-->
+            <form action="procesar.php" name="contacto" method="post">
+            <fieldset>
+                <legend class="font-h2">¡Escribinos!</legend>
+        
+                <p class="box__input">
+                <label>Nombre:
+                    <input type="text" name="nombre" placeholder="name" required="">
+                </label>
+                </p>
+        
+                <p class="box__input">
+                <label>Apellido:
+                    <input type="text" name="apellido" placeholder="surname" required="">
+                </label>
+                </p>
+        
+                <p class="box__input">
+                <label>Email:
+                    <input type="email" name="apellido" placeholder="hola@servidor.com.ar" required="">
+                </label>
+                </p>
+        
+                <p class="box__input">
+                <label>Contraseña:
+                    <input type="password" name="contraseña">
+                </label>
+                </p>
+        
+                <!--Radio-->
+                <h4 class="box__input">Sexo</h4>
+                <label class="box__input" for="sexo">Mujer</label>
+                <input type="radio" name="sexo" value="mujer">
+                <label class="box__input" for="sexo">Hombre</label>
+                <input type="radio" name="sexo" value="hombre">
+                <label class="box__input" for="sexo">Otro</label>
+                <input type="radio" name="sexo" value="otro">
+        
+                <!--Comentario-->
+                <h4 class="box__input">Mensaje</h4>
+                <textarea name="comentario" id="textarea" cols="30" rows="10"></textarea>
+        
+                <!--Botones-->
+                <p>
+                <button class="button" type="submit">Enviar</button>
+                </p>
+            </fieldset>
+            </form>
+        </div>
+        <div class="g-info">
+            <ul>
+                <li class="font-nav"><i class="fa-solid fa-location-dot"></i>Av. Bodereau 9049, Córdoba, Argentina</li>
+                <li class="font-nav"><i class="fa-solid fa-phone"></i>+549 3517699573</li>
+                <li class="font-nav"><i class="fa-solid fa-envelope"></i>lasedecomplejo@gmail.com</li>
+            </ul>
+        </div>
+        <div class g-map>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.5058552724076!2d-64.290623984926!3d-31.317400081437153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329deca5e78d0f%3A0x6e4621914e8318cc!2sLA%20SEDE!5e0!3m2!1ses!2sar!4v1658850648791!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer id="footer" class="grid-item-c g-footer">
+        <article>
+            <p class="font-nav">Desarrollado por Lucrecia Aliaga</p>
+            <p class="font-nav">Seguinos en nuestras redes</p>
+        </article>
+    </footer>
+</body>
+</html>
