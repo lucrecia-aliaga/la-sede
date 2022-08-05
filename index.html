@@ -8,28 +8,47 @@
     <link rel="shortcut icon" href="./assets/LaSede_Logo.svg" type="image/x-icon">
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/b822b70e86.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--Hoja de estilos de manera externa-->
     <link rel="stylesheet" href="./css/estilos.css">
     <title>La Sede-Home</title>
 </head>
-<body>
+<body class="bg-dark text-white">
     <header>
+
         <!--Mi barra de navegacion-->
-        <div>
-            <a href="../index.html">
-                <img src="./assets/LaSede_Logo.svg" alt="logo-la_sede" width="100px">
-            </a>
-        </div>
-        <!--hipervínculos a mis distintas páginas web-->
-        <nav>
-            <ul class="nav__list">
-                <li><a href="#" class="font-nav">Home</a> </li>
-                <li><a href="./pages/futbol.html" class="font-nav">Fútbol</a></li>
-                <li><a href="./pages/padel.html" class="font-nav">Padel</a></li>
-                <li><a href="./pages/galeria.html" class="font-nav">Galería</a></li>
-                <li><a href="./pages/contacto.html" class="font-nav">Contacto</a></li>
-            </ul>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark" width="100">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                <img src="./assets/LaSede_Logo.svg" alt="" width="100" height="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/futbol.html">Fútbol</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/padel.html">Padel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
         </nav>
+    
     </header>
     <main>
         <div class="banner">
@@ -39,16 +58,16 @@
             <h2 class="font-h2">Próximos eventos</h2>
         </div>
         <section class="contenedor">
-            <article class="card">
-                <img class="card__img" src="./assets/img/evento1.jpg" alt="evento1">
+            <article class="cards">
+                <img class="cards__img" src="./assets/img/evento1.jpg" alt="evento1">
                 <h3 class="font-h3">Torneo de padel</h3>
-                <p class="card__text"> Descripción breve del evento</p>
+                <p class="cards__text"> Descripción breve del evento</p>
                 <button class="button">Más info</button>
             </article>
-            <article class="card">
-                <img class="card__img" src="./assets/img/evento2.jpg" alt="evento2">
+            <article class="cards">
+                <img class="cards__img" src="./assets/img/evento2.jpg" alt="evento2">
                 <h3 class="font-h3">Torneo de Futbol</h3>
-                <p class="card__text">Descripción breve del evento</p>
+                <p class="cards__text">Descripción breve del evento</p>
                 <button class="button">Más info</button>
             </article>
         </section>
@@ -69,5 +88,9 @@
         <p class="font-nav">Seguinos en nuestras redes</p>
     </article>
     </footer>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
 </body>
 </html>

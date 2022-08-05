@@ -156,18 +156,18 @@ ul{
 
 /*card*/
 
-.card {
+.cards {
     width: 400px;
     margin: 20px;
     padding: 20px;
     background-color: rgb(27, 27, 27);
 }
 
-.card__img {
+.cards__img {
     width: 100%;
 }
 
-.card__text {
+.cards__text {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     margin-bottom: 20px;
@@ -226,14 +226,25 @@ table tbody tr td{
 }
 
 /*Flexbox Nav Bar*/
-header{
+/*header{
     display: flex;
     justify-content: space-between;
     background-color: rgb(33, 33, 33);
-    padding: 20px;
     align-items: center;
     flex-wrap: wrap;
+}*/
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 30px;
 }
+
+
+.navbar-expand-lg .navbar-collaps{
+    flex-grow: initial;
+}
+
 
 /*columna en fila*/
 .nav__list{
