@@ -36,10 +36,22 @@ body {
     font-size: 18px;
 }
 
+@media (max-width: 768px){
+    .font-description{
+        font-size: 14px;
+    }
+}
+
 .font-h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+    .font-h3{
+        font-size: 18px;
+    }
 }
 
 .font-nav{
@@ -104,6 +116,12 @@ body {
     color: white;
 }
 
+@media (max-width: 768px){
+    .button{
+        font-size: 14px;
+    }
+}
+
 /*ID*/
 #footer{
     width: 100%;
@@ -165,6 +183,7 @@ ul{
 
 .cards__img {
     width: 100%;
+    margin-bottom: 16px;
 }
 
 .cards__text {
@@ -239,6 +258,8 @@ table tbody tr td{
     font-family: 'Poppins', sans-serif;
     margin-right: 30px;
 }
+
+
 
 
 .navbar-expand-lg .navbar-collaps{
@@ -418,11 +439,11 @@ table tbody tr td{
         margin: 10px;
         padding: 0px;
     }
-    .card {
+    .cards {
         width: 90%;
         margin: 10px;
     }
-    .card__text {
+    .cards__text {
         font-size: 14px;
     }
     .font-h1 {
@@ -450,3 +471,8 @@ table tbody tr td{
     }
 }
 
+/*Pseudoclases*/
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: orangered;
+}
