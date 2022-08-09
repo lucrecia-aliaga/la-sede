@@ -11,8 +11,6 @@
 
 
 
-
-
 /*Selector Universal*/
 * {
     margin: 0;
@@ -244,22 +242,12 @@ table tbody tr td{
     margin: 40px;
 }
 
-/*Flexbox Nav Bar*/
-/*header{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(33, 33, 33);
-    align-items: center;
-    flex-wrap: wrap;
-}*/
 
 .navbar-expand-lg .navbar-nav .nav-link{
     color: white;
     font-family: 'Poppins', sans-serif;
     margin-right: 30px;
 }
-
-
 
 
 .navbar-expand-lg .navbar-collaps{
