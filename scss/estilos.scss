@@ -91,12 +91,28 @@ body{
 
 .banner{
     width: 100%;
-    height: 600px;
-    background-image: url(../assets/img/donnycocacola--3pxa1O1zoI-unsplash.jpg);
+    height: 650px;
+    background-image: url(../assets/img/banner.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: right;
     padding: 60px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
 }
+
+@media (max-width: 768px){
+    .banner{
+        height: 400px;
+        background-position: right;
+        padding: 20px;
+        background-size:cover;
+        background-image: url(../assets/img/banner-mobile.jpg);
+        object-fit: cover;
+    }
+}
+
 
 .banner-futbol{
     width: 100%;
@@ -451,11 +467,6 @@ table tbody tr td{
     }
     .font-h2 {
         font-size: 24px;
-    }
-    .banner {
-        height: 400px;
-        background-position: center;
-        padding: 20px;
     }
     .servicios > * {
         margin: 10px;
