@@ -29,13 +29,13 @@ body header nav ul li a {
 }
 
 /*Font class*/
-.font-description {
+.font-description, .cards__text {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
 }
 
 @media (max-width: 768px) {
-  .font-description {
+  .font-description, .cards__text {
     font-size: 14px;
   }
 }
@@ -135,8 +135,13 @@ body header nav ul li a {
 #footer {
   width: 100%;
   background-color: rgb(33, 33, 33);
-  color: orangered;
+  color: white;
   padding: 40px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #textarea {
@@ -179,13 +184,12 @@ ul {
 }
 
 .cards__img {
+  height: 100%;
   width: 100%;
   margin-bottom: 16px;
 }
 
 .cards__text {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
   margin-bottom: 20px;
   max-width: 90%;
   margin-top: 10px;
@@ -215,6 +219,30 @@ ul {
 .servicios > * {
   padding: 20px;
   margin: 40px;
+}
+
+.icono-servicio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-media > * {
+  padding: 20px;
+}
+
+.fa-solid {
+  margin: 12px;
 }
 
 table {
@@ -418,6 +446,24 @@ table tbody tr td {
 /*Pseudoclases*/
 .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: orangered;
+}
+
+/*SASS II*/
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--Instagram {
+  background-color: rgba(255, 107, 9, 0.5254901961);
+  border: none;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px 15px;
+}
+
+.btn--Whatsapp {
+  background-color: rgba(255, 255, 255, 0.5960784314);
+  border: none;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px 15px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
