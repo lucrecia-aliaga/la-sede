@@ -3,7 +3,7 @@
 
 
 /*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 @font-face {
     font-family: "Syne";
@@ -59,10 +59,12 @@ body{
     }
 }
 
-.font-h3 {
+
+.h3 {
     font-family: $font-text;
     font-size: 24px;
     text-transform: uppercase;
+    font-weight:700;
 }
 
 @media (max-width: 768px){
