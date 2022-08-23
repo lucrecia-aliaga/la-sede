@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @font-face {
   font-family: "Syne";
   src: url("../assets/syne_font/Syne-ExtraBold.ttf");
@@ -39,14 +39,15 @@ body header nav ul li a {
     font-size: 14px;
   }
 }
-.font-h3 {
+.h3 {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
-  .font-h3 {
+  .h3 {
     font-size: 18px;
   }
 }
@@ -88,7 +89,8 @@ body header nav ul li a {
     padding: 20px;
     background-size: cover;
     background-image: url(../assets/img/banner-mobile.jpg);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .banner-futbol {
@@ -464,6 +466,4 @@ table tbody tr td {
   border-radius: 25px;
   margin: 10px;
   padding: 10px 15px;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
